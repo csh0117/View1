@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/colorPrimaryDark"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
 <!--TextView 안에서 주석을 작성할 수 없다.-->
     <TextView
         android:id="@+id/text1"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/app_name2"
         android:textSize="30dp"
         android:textColor="@color/colorBlue"
@@ -19,12 +21,53 @@
         android:padding="20dp"
         android:layout_marginTop="10dp"
         android:gravity="center_vertical|center_horizontal"
-        android:layout_gravity="center_vertical"
+        android:layout_gravity="top"
         />
 
+    <!-- 이벤트를 구현 하는 객체, 이벤트 리스너, 이벤트 핸들러, 콜백함수 -->
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BUTTON1"
+        android:background="@color/colorBlack"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        />
 
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BUTTON2"
+        android:background="@color/colorGreen"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        />
 
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BUTTON3"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorRed"
+        android:layout_marginTop="10dp"
+        />
 
+    <!-- 텍스트를 입력-->
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cccccc"
+        android:layout_marginTop="10dp"
+        android:hint="결과창 : "
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorBlack"
+        android:gravity="top"
+        android:padding="20dp"
+        />
 
 
 </LinearLayout>
